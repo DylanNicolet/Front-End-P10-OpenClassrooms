@@ -1,6 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "../css/Header.css";
 
 import logo from "../images/logo.jpg"
 

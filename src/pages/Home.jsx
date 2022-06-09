@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import database from "../database.json";
+//import database from "../database.json";
 
 import Header from "../components/Header";
 import Banner from "../components/Banner";
