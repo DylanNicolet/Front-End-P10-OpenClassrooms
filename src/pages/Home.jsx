@@ -1,19 +1,21 @@
 import React from "react";
 //import database from "../database.json";
 
-import Header from "../components/Header";
+import Header from "../layouts/Header";
 import Banner from "../components/Banner";
 import AccommodationContainer from "../components/AccommodationContainer";
+import Footer from "../layouts/Footer";
 
 //const data = database.data
 
 export default function Home(){
     return(
-        <section>
+        <main className="main">
             <Header />
             <Banner />
             <AccommodationContainer />
-        </section>
+            <Footer />
+        </main>
        
     )
 }

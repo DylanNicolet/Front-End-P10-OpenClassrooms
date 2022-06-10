@@ -1,22 +1,33 @@
 header{
-    width: 100%;
-    text-align: center;
-    position: relative;
-    background-color: white;
+    width: 90%;
+    margin: 10px auto 0px auto;
+    display: flex;
     
     img{
-        height: 100%;
-        width: auto;
-        margin: 20px auto 15px auto;
-        z-index: -1;
+        width: 190px;
+        margin: 0;
+    }
 
-        @include tablet-only{
-            margin: 25px auto
-        }
-    }    
+    nav{
+        margin-left: auto;
+    }
+
+    ul{
+        display: flex;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        list-style: none;
+    }
+
+    li{
+        margin: 10px;
+        color: $color-primary;
+    }
 }
 
-.header--homepage{
+/*.header--homepage{
     @include tablet-only{
         text-align: left;
         margin: auto auto 15px auto;
@@ -25,4 +36,4 @@ header{
             margin: 20px 5% 15px 5%;
         }
     }
-}
+}*/
