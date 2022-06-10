@@ -1,9 +1,12 @@
 import Home from './Home';
 import "../sass/App.css";
+import AccommodationPage from './AccommodationPage';
+
 
 function App() {
   return (
-    <Home />
+    //<Home />
+    <AccommodationPage />
   );
 }
 

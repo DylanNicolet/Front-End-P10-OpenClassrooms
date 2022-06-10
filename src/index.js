@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
+import Home from './pages/Home';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Link,
+  Outlet,
+  useParams,
+  NavLink,
+  useNavigate,
+  useLocation
+} from 'react-router-dom';
+import AccommodationPage from './pages/AccommodationPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/accommodation' element={<AccommodationPage />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

@@ -13,6 +13,5 @@ export default function Home(){
             <AccommodationContainer />
             <Footer />
         </main>
-       
     )
 }

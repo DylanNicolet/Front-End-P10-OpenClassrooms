@@ -1,9 +1,12 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export default function AccommodationCard(props){
     return(
-        <section 
-        className="accommodation-card" style={{
+        <Link 
+        to={`/accommodation`}
+        className="accommodation-card" 
+        style={{
             backgroundImage: "url(" + props.cover + ")",
             backgroundPosition: 'center',
             backgroundSize: 'cover',
@@ -14,6 +17,6 @@ export default function AccommodationCard(props){
                 <p className="card__accommodation">Accommodation</p>
                 <p className="card__title">{props.title}</p>
             </section>
-        </section>
+        </Link>
     )
 }

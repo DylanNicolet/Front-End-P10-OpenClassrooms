@@ -9,6 +9,7 @@ export default function AccommodationContainer() {
         <AccommodationCard 
         title={square.title}
         cover={square.cover}
+        id={square.id}
         />
     ))
     
