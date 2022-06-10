@@ -9,6 +9,13 @@
     border-radius: 10px;
     display: flex;
     position: relative;
+    cursor: default;
+
+    @include desktop-only{
+        height: 160px;
+        border-radius: 20px;
+        margin: 20px auto 40px auto;
+    }
 
     h1{
         margin-left: 20px;
@@ -16,8 +23,14 @@
         font-size: 1.4rem;
         align-self: center;
         color: $color-secondary;
-        font-weight: 500;
+        font-weight: 400;
         z-index: 3;
+
+        @include desktop-only{
+            width: auto;
+            margin: auto;
+            font-size: 2.4rem;
+        }
     }
 }
 
@@ -28,4 +41,8 @@
     background-color: $color-tertiary;
     opacity: 0.3;
     border-radius: 10px;
+
+    @include desktop-only{
+        border-radius: 20px;
+    }
 }

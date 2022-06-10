@@ -1,4 +1,13 @@
 .accommodation-container{
     width: 90%;
-    margin: auto;  
+    margin: auto;
+
+    @include desktop-only{
+        background-color: #F6F6F6;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px;
+        grid-gap: 40px;
+    }
 }
