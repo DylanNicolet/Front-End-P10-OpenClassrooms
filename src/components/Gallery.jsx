@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Gallery(props){
     const [backgroundIndex, setBackgroundIndex] = React.useState(0)
@@ -19,9 +22,8 @@ export default function Gallery(props){
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
         }}>
-            <h1>{backgroundIndex}</h1>
-            <button onClick={handlePreviousButton}>previous</button>
-            <button onClick={handleNextButton}>next</button>
+            {numberOfPictures>1 && <button className="gallery__button" onClick={handlePreviousButton}><FontAwesomeIcon icon={faChevronLeft} /></button>}
+            {numberOfPictures>1 && <button className="gallery__button" onClick={handleNextButton}><FontAwesomeIcon icon={faChevronRight} /></button>}
         </section>
     )
 }

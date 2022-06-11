@@ -1,0 +1,18 @@
+.rating{
+    &__star--active{
+        color: $color-primary;
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    &__star--innactive{
+        color: #E3E3E3;
+        margin-right: 5px;
+        font-size: 18px;
+    }
+}
+
+.information__rating{
+    display: flex;
+    align-items: center;
+}

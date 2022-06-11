@@ -1,7 +1,18 @@
 .gallery{
     width: 90%;
-    height: 320px;
+    height: 255px;
     object-fit: cover;
     margin: 0px 5%;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__button{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: $color-secondary;
+        font-size: 30px;
+        margin: auto 7px;
+        cursor: pointer;
+    }
 }

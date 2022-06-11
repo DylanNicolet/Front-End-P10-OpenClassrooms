@@ -94,11 +94,26 @@ body p {
 
 .gallery {
   width: 90%;
-  height: 320px;
+  height: 255px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0px 5%;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery__button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  margin: auto 7px;
+  cursor: pointer;
 }
 
 .accommodation-container {
@@ -161,6 +176,27 @@ body p {
 .card__text p {
   margin: 10px 0px;
   font-size: 1.1rem;
+}
+
+.rating__star--active {
+  color: #FF6060;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.rating__star--innactive {
+  color: #E3E3E3;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.information__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .information__tags {
@@ -299,6 +335,7 @@ footer p {
 }
 
 .information__rating-host {
+  margin-top: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
