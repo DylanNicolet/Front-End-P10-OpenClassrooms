@@ -92,6 +92,15 @@ body p {
   }
 }
 
+.gallery {
+  width: 90%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0px 5%;
+  border-radius: 10px;
+}
+
 .accommodation-container {
   width: 90%;
   margin: auto;
@@ -152,6 +161,26 @@ body p {
 .card__text p {
   margin: 10px 0px;
   font-size: 1.1rem;
+}
+
+.information__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #FF6060;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  min-width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-right: 13px;
+  margin-bottom: 13px;
 }
 
 header {
@@ -247,5 +276,52 @@ footer p {
   footer p {
     font-size: 1.5rem;
   }
+}
+
+.information {
+  width: 90%;
+  margin: auto;
+}
+
+.information__title-location-tag h1 {
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.information__title-location-tag p {
+  color: #FF6060;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.information__rating-host {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information__host {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information__host p {
+  color: #FF6060;
+  font-weight: 500;
+}
+
+.information__host img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,16 @@
+.information__tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag{
+    background-color: $color-primary;
+    border-radius: 5px;
+    color: $color-secondary;
+    font-size: 0.8rem;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}

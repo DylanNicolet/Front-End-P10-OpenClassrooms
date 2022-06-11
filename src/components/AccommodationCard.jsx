@@ -1,12 +1,12 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function AccommodationCard(props){
+    const navigate = useNavigate()
+
     return(
-        <Link 
-        to={`/accommodation`}
-        className="accommodation-card" 
-        style={{
+        <section onClick={() => {navigate("/accommodation", {state:props.totalData})}}
+        className="accommodation-card" style={{
             backgroundImage: "url(" + props.cover + ")",
             backgroundPosition: 'center',
             backgroundSize: 'cover',
@@ -17,6 +17,6 @@ export default function AccommodationCard(props){
                 <p className="card__accommodation">Accommodation</p>
                 <p className="card__title">{props.title}</p>
             </section>
-        </Link>
+        </section>
     )
 }

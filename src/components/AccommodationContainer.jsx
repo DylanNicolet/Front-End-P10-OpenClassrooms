@@ -10,6 +10,7 @@ export default function AccommodationContainer() {
         title={square.title}
         cover={square.cover}
         id={square.id}
+        totalData={square}
         />
     ))
     
