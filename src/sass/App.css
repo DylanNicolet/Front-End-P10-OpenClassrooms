@@ -217,6 +217,70 @@ body p {
   padding: 5px 10px;
   margin-right: 13px;
   margin-bottom: 13px;
+  cursor: default;
+}
+
+.collapse {
+  width: 90%;
+  margin: 25px auto 25px auto;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+.collapse__tab {
+  width: 100%;
+  background-color: #FF6060;
+  margin: auto;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.collapse__tab h2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 10px 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.collapse__icon {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 23px;
+  color: #ffffff;
+  margin: auto 10px;
+}
+
+.collapse__content-container {
+  margin: 0;
+  padding: 23px 15px 3px 15px;
+  min-height: 145px;
+  color: #FF6060;
+  font-size: 1.1rem;
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.collapse__content-text {
+  width: 100%;
+  margin: 2px 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header {
@@ -317,6 +381,7 @@ footer p {
 .information {
   width: 90%;
   margin: auto;
+  cursor: default;
 }
 
 .information__title-location-tag h1 {

@@ -4,8 +4,7 @@ import Tag from "../components/Tag.jsx";
 import Rating from "../components/Rating.jsx";
 import Footer from "../layouts/Footer";
 import Gallery from "../components/Gallery.jsx";
-import AccommodationDescription from "../components/AccommodationDescription.jsx";
-import AccommodationEquipement from "../components/AccommodationEquipement.jsx";
+import Collapse from "../components/Collapse.jsx";
 import { useLocation } from "react-router-dom";
 
 export default function AccommodationPage(){
@@ -29,8 +28,8 @@ export default function AccommodationPage(){
                     </section>
                 </section>
             </section>
-            <AccommodationDescription />
-            <AccommodationEquipement />
+            <Collapse tabName="Description" data={accommodation.description} />
+            <Collapse tabName="Equipements" data={accommodation.Amenities} />
             <Footer />
         </main>
     )
