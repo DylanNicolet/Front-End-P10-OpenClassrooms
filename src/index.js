@@ -1,37 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
-import App from './pages/App';
-import reportWebVitals from './reportWebVitals';
-import Home from './pages/Home';
-import AccommodationPage from './pages/AccommodationPage';
-import About from './pages/About';
-import Error from './pages/Error';
+import App from './routes/App';
+import Home from './routes/Home';
+import AccommodationPage from './routes/AccommodationPage';
+import About from './routes/About';
+import Error from './routes/Error';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-  Link,
-  Outlet,
-  useParams,
-  NavLink,
-  useNavigate,
-  useLocation
-} from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/accommodation' element={<AccommodationPage />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/error' element={<Error />} />
+        <Route path="/" element={<App />}>
+          <Route path='/' element={<Home />} />
+          <Route path='accommodation' element={<AccommodationPage />}/>
+          <Route path='about' element={<About />} />
+          <Route path='*' element={<Error />} />
+        </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

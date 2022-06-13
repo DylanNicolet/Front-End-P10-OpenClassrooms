@@ -13,18 +13,14 @@ const safetyText = "Safety is Kasa's priority. Both for our guests and for trave
 
 export default function About(){
     return(
-        <main>
-            <section>
-                <Header />
-                <img src={about} alt="distant mountain range" className="about__cover-image" />
-                <section className="about__all-collapses">
-                    <Collapse tabName="Reliability" data={reliabilityText} page="about"/>
-                    <Collapse tabName="Respect" data={respectText} page="about"/>
-                    <Collapse tabName="Service" data={serviceText} page="about"/>
-                    <Collapse tabName="Safety" data={safetyText} page="about"/>
-                </section>
+        <section>
+            <img src={about} alt="distant mountain range" className="about__cover-image" />
+            <section className="about__all-collapses">
+                <Collapse tabName="Reliability" data={reliabilityText} page="about"/>
+                <Collapse tabName="Respect" data={respectText} page="about"/>
+                <Collapse tabName="Service" data={serviceText} page="about"/>
+                <Collapse tabName="Safety" data={safetyText} page="about"/>
             </section>
-            <Footer />
-        </main>
+        </section>
     )
 }
