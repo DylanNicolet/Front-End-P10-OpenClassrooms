@@ -15,9 +15,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path='/' element={<App />}>
           <Route path='/' element={<Home />} />
-          <Route path='accommodation' element={<AccommodationPage />}/>
+          <Route path='accommodation' element={<AccommodationPage />}>
+            <Route path=':accommodationId' element={<AccommodationPage />}></Route>
+          </Route>
           <Route path='about' element={<About />} />
           <Route path='*' element={<Error />} />
         </Route>
