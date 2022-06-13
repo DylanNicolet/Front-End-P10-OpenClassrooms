@@ -546,4 +546,45 @@ footer p {
     border-radius: 25px;
   }
 }
+
+.error-page__content {
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+  color: #FF6060;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.error-page__content h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 1260px) {
+  .error-page__content h1 {
+    font-size: 13rem;
+  }
+}
+
+.error-page__content h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1260px) {
+  .error-page__content h2 {
+    font-size: 2rem;
+  }
+}
+
+.error-page a {
+  color: #FF6060;
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
 /*# sourceMappingURL=App.css.map */

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import AccommodationPage from './pages/AccommodationPage';
 import About from './pages/About';
+import Error from './pages/Error';
 
 import {
   BrowserRouter as Router,
@@ -28,6 +29,7 @@ root.render(
         <Route path='/' element={<Home />}/>
         <Route path='/accommodation' element={<AccommodationPage />} />
         <Route path='/about' element={<About />} />
+        <Route path='/error' element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>
