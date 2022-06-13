@@ -3,6 +3,12 @@
     margin: auto;
     cursor: default;
 
+    @include desktop-only{
+        margin: 30px auto 0px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__title-location-tag{
         h1{
             color: $color-primary;
@@ -10,6 +16,10 @@
             font-size: 1.5rem;
             margin-top: 10px;
             margin-bottom: 0px;
+
+            @include desktop-only{
+                font-size: 2rem;
+            }
         }
 
         p{
@@ -24,10 +34,18 @@
         margin-top: 7px;
         display: flex;
         justify-content: space-between;
+
+        @include desktop-only{
+            flex-direction: column;
+        }
     }
 
     &__host{
         display: flex;
+
+        @include desktop-only{
+            order: -1;
+        }
 
         p{
             color: $color-primary;
@@ -40,5 +58,15 @@
             border-radius: 50%;
             margin-left: 10px;
         }
+    }
+}
+
+.description-equipements{
+    @include desktop-only{
+        display: flex;
+        
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
     }
 }

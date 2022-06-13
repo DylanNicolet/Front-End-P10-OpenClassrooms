@@ -4,6 +4,8 @@ import './index.css';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
+import AccommodationPage from './pages/AccommodationPage';
+import About from './pages/About';
 
 import {
   BrowserRouter as Router,
@@ -17,7 +19,6 @@ import {
   useNavigate,
   useLocation
 } from 'react-router-dom';
-import AccommodationPage from './pages/AccommodationPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/accommodation' element={<AccommodationPage />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </Router>
   </React.StrictMode>

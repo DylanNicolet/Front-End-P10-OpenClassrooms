@@ -8,9 +8,13 @@ import Footer from "../layouts/Footer";
 export default function Home(){
     return(
         <main className="main">
-            <Header />
-            <Banner />
-            <AccommodationContainer />
+            <section>
+                <Header />
+                <Banner />
+                <AccommodationContainer />
+            </section>
+            
+            {/*seperate the footer from the rest of the page*/}
             <Footer />
         </main>
     )

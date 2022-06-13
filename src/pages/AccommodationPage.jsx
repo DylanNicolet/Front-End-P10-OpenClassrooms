@@ -12,24 +12,30 @@ export default function AccommodationPage(){
     const accommodation = location.state
     return(
         <main>
-            <Header />
-            <Gallery pictures = {accommodation.pictures} />
-            <section className="information">
-                <section className="information__title-location-tag">
-                    <h1>{accommodation.title}</h1>
-                    <p>{accommodation.location}</p>
-                    <Tag tags={accommodation.tags} />
-                </section>
-                <section className="information__rating-host">
-                    <Rating rating={accommodation.rating} />
-                    <section className="information__host">
-                        <p>{accommodation.host.name}</p>
-                        <img src={accommodation.host.picture} alt="of the host" />
+            <section>
+                <Header />
+                <Gallery pictures = {accommodation.pictures} />
+                <section className="information">
+                    <section className="information__title-location-tag">
+                        <h1>{accommodation.title}</h1>
+                        <p>{accommodation.location}</p>
+                        <Tag tags={accommodation.tags} />
+                    </section>
+                    <section className="information__rating-host">
+                        <Rating rating={accommodation.rating} />
+                        <section className="information__host">
+                            <p>{accommodation.host.name}</p>
+                            <img src={accommodation.host.picture} alt="of the host" />
+                        </section>
                     </section>
                 </section>
+                <section className="description-equipements">
+                    <Collapse tabName="Description" data={accommodation.description} page="accommodation"/>
+                    <Collapse tabName="Equipements" data={accommodation.Amenities} page="accommodation"/>
+                </section>
             </section>
-            <Collapse tabName="Description" data={accommodation.description} />
-            <Collapse tabName="Equipements" data={accommodation.Amenities} />
+
+            {/*seperate the footer from the rest of the page*/}
             <Footer />
         </main>
     )

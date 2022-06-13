@@ -15,4 +15,10 @@
 .information__rating{
     display: flex;
     align-items: center;
+
+    @include desktop-only{
+        margin-bottom: 15px;
+        justify-content: flex-end;
+    }
+    
 }
