@@ -27,7 +27,7 @@ export default function AccommodationPage(){
                 <section className="information__rating-host">
                     <Rating rating={currentData.rating} />
                     <section className="information__host">
-                        <p>{currentData.host.name}</p>
+                        <p>{currentData.host.name.split(" ")[0]} <br /> {currentData.host.name.split(" ")[1]}</p>
                         <img src={currentData.host.picture} alt="of the host" />
                     </section>
                 </section>

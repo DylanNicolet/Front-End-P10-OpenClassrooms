@@ -1,7 +1,7 @@
 .error-page{
     &__content {
         width: 70%;
-        margin: 0px auto;
+        margin: auto;
         text-align: center;
         color: $color-primary;
         @include no-select;
@@ -19,17 +19,18 @@
         h2{
             font-size: 1.2rem;
             font-weight: 500;
+            margin-bottom: 13vh;
 
             @include desktop-only{
                 font-size: 2rem;
             }
         }
     }
+}
 
-    a{
-        color: $color-primary;
+.error__link{
+    color: $color-primary;
         width: 90%;
-        margin: 0px auto;
+        margin: auto;
         text-align: center;
-    }
 }
