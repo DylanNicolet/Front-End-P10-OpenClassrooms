@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../layouts/Footer";
-import Header from "../layouts/Header";
 import Collapse from "../components/Collapse";
 import about from "../images/about.jpg";
 
