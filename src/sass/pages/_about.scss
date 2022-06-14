@@ -1,0 +1,14 @@
+.about{
+    &__cover-image{
+        width: 90%;
+        margin: auto 5%;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+
+        @include desktop-only{
+            height: 200px;
+            border-radius: 25px;
+        }
+    }
+}

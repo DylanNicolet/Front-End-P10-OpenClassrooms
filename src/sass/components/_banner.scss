@@ -1,0 +1,48 @@
+.banner{
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    cursor: default;
+
+    @include desktop-only{
+        height: 160px;
+        border-radius: 20px;
+        margin: 20px auto 40px auto;
+    }
+
+    h1{
+        margin-left: 20px;
+        width: 70%;
+        font-size: 1.4rem;
+        align-self: center;
+        color: $color-secondary;
+        font-weight: 400;
+        z-index: 3;
+
+        @include desktop-only{
+            width: auto;
+            margin: auto;
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.dark-haze{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $color-tertiary;
+    opacity: 0.3;
+    border-radius: 10px;
+
+    @include desktop-only{
+        border-radius: 20px;
+    }
+}

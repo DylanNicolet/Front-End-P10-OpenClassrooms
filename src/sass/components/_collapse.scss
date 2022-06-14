@@ -1,0 +1,66 @@
+.collapse{
+    width: 100%;
+    margin: 25px auto 25px auto;
+    border-radius: 5px;
+
+    &__tab{
+        width: 100%;
+        background-color: $color-primary;
+        margin: auto;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        h2{
+            color: $color-secondary;
+            font-weight: 400;
+            font-size: 1.1rem;
+            margin: 10px 15px;
+            @include no-select
+        }
+    }
+
+    &__icon{
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: 23px;
+        color: $color-secondary;
+        margin: auto 10px;
+    }
+
+    &__content-container{
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 23px 15px 3px 15px;
+        min-height: 145px;
+        color: $color-primary;
+        font-size: 1.1rem;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    &__content-text{
+        margin: 2px 0px;
+        @include no-select
+    }
+}
+
+//Page specific modifiers for desktop appearance of collapses (Pass the page name as a prop when calling a collapse component)
+.collapse--accommodation{
+    @include desktop-only{
+        width: 47%;
+        margin:  15px 0px;
+    } 
+}
+
+.collapse--about{
+    width: 90%;
+
+    @include desktop-only{
+        width: 75%;
+    }
+}
