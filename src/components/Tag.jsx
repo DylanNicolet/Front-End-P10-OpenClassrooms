@@ -3,7 +3,7 @@ import React from "react";
 export default function Tag(props){
     const tags = props.tags
     const allTags = tags.map(tag =>(
-        <section className="tag">{tag}</section>
+        <section className="tag" key={tag}>{tag}</section>
     ))
 
     return(

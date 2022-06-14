@@ -10,7 +10,7 @@ export default function Collapse(props){
     let isDataAString = typeof(props.data) === 'string' ? true : false
 
     //Map the data if props.data is not a string
-    let dataIsAnObject = !isDataAString && props.data.map(element =>(<p className="collapse__content-text">{element}</p>))
+    let dataIsAnObject = !isDataAString && props.data.map(element =>(<p className="collapse__content-text" key={element}>{element}</p>))
 
     //useState for click handler and icon rendering
     const [isOpened, setIsOpened] = React.useState(false)

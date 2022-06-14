@@ -170,6 +170,7 @@ body p {
       -ms-flex-align: end;
           align-items: flex-end;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1260px) {
@@ -253,7 +254,7 @@ body p {
 }
 
 .collapse {
-  width: 90%;
+  width: 100%;
   margin: 25px auto 25px auto;
   border-radius: 5px;
 }
@@ -325,13 +326,17 @@ body p {
   }
 }
 
+.collapse--about {
+  width: 90%;
+}
+
 @media only screen and (min-width: 1260px) {
   .collapse--about {
     width: 75%;
   }
 }
 
-header {
+.header {
   width: 90%;
   margin: 0px auto;
   display: -webkit-box;
@@ -339,16 +344,22 @@ header {
   display: flex;
 }
 
-header img {
-  width: 190px;
+.header img {
+  width: 150px;
   margin: 0;
 }
 
-header nav {
+@media only screen and (min-width: 1260px) {
+  .header img {
+    width: 190px;
+  }
+}
+
+.header nav {
   margin-left: auto;
 }
 
-header ul {
+.header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,21 +372,19 @@ header ul {
   list-style: none;
 }
 
-header li {
-  margin: 10px;
+.header__link {
   color: #FF6060;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 40px;
 }
 
-/*.header--homepage{
-    @include tablet-only{
-        text-align: left;
-        margin: auto auto 15px auto;
+@media only screen and (min-width: 1260px) {
+  .header__link {
+    font-size: 1.2rem;
+  }
+}
 
-        img{
-            margin: 20px 5% 15px 5%;
-        }
-    }
-}*/
 footer {
   height: 100px;
   width: 100%;
@@ -398,7 +407,7 @@ footer {
 
 @media only screen and (min-width: 1260px) {
   footer {
-    height: 150px;
+    height: 90px;
   }
 }
 
@@ -415,8 +424,8 @@ footer img {
 
 @media only screen and (min-width: 1260px) {
   footer img {
-    width: 150px;
-    height: 47px;
+    width: 90px;
+    height: 30px;
   }
 }
 
@@ -430,7 +439,7 @@ footer p {
 
 @media only screen and (min-width: 1260px) {
   footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -518,6 +527,11 @@ footer p {
   margin-left: 10px;
 }
 
+.description-equipements {
+  width: 90%;
+  margin: auto;
+}
+
 @media only screen and (min-width: 1260px) {
   .description-equipements {
     display: -webkit-box;
@@ -526,8 +540,6 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 90%;
-    margin: auto;
   }
 }
 

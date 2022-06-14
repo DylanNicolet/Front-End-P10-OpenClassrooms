@@ -1,11 +1,15 @@
-header{
+.header{
     width: 90%;
     margin: 0px auto;
     display: flex;
     
     img{
-        width: 190px;
+        width: 150px;
         margin: 0;
+
+        @include desktop-only{
+            width: 190px;
+        }
     }
 
     nav{
@@ -21,19 +25,14 @@ header{
         list-style: none;
     }
 
-    li{
-        margin: 10px;
+    &__link{
         color: $color-primary;
-    }
-}
+        font-weight: 500;
+        font-size: 1rem;
+        margin-left: 40px;
 
-/*.header--homepage{
-    @include tablet-only{
-        text-align: left;
-        margin: auto auto 15px auto;
-
-        img{
-            margin: 20px 5% 15px 5%;
+        @include desktop-only{
+            font-size: 1.2rem;
         }
     }
-}*/
+}

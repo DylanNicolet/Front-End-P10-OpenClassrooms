@@ -62,11 +62,12 @@
 }
 
 .description-equipements{
+    width: 90%;
+    margin: auto;
+    
     @include desktop-only{
         display: flex;
-        
         justify-content: space-between;
-        width: 90%;
-        margin: auto;
+        
     }
 }
