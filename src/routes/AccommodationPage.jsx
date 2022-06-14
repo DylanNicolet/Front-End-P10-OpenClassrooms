@@ -12,6 +12,7 @@ export default function AccommodationPage(){
     let currentId = params.accommodationId
 
     const data = database.data
+    
     //match the url-id to an accommodation in the database
     let currentData = data.find((accommodation) => accommodation.id === currentId)
 

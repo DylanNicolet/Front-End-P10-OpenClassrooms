@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 export default function Home(){
     const data = database.data
 
+    //Maps every accommodation from the database to create cards
     const accommodations = data.map(element =>(
         <Link className="accommodation-card" to={`/accommodation/${element.id}`} key={element.id}
         style={{
