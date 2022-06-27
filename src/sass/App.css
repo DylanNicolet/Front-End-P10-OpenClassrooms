@@ -116,6 +116,8 @@ body p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 @media only screen and (min-width: 1260px) {
@@ -562,7 +564,7 @@ footer p {
 
 .error-page__content {
   width: 70%;
-  margin: auto;
+  margin: 15vh auto 0 auto;
   text-align: center;
   color: #FF6060;
   -webkit-user-select: none;

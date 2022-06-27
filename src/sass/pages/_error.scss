@@ -1,7 +1,7 @@
 .error-page{
     &__content {
         width: 70%;
-        margin: auto;
+        margin: 15vh auto 0 auto;
         text-align: center;
         color: $color-primary;
         @include no-select;
