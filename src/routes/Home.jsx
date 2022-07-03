@@ -3,6 +3,7 @@ import database from "../database.json";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 
+//Component to render the Homepage
 export default function Home(){
     const data = database.data
 

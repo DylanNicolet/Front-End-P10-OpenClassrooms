@@ -1,6 +1,6 @@
 import React from "react";
 
-
+//Component to display the homepage banner with the slogan
 export default function Banner(){
     return(
         <section className="banner">

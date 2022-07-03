@@ -1,5 +1,6 @@
 import React from "react";
 
+//component to render tags for each accommodation's page
 export default function Tag(props){
     const tags = props.tags
     const allTags = tags.map(tag =>(

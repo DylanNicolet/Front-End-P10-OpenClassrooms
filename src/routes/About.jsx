@@ -8,7 +8,7 @@ const serviceText = "Our teams are at your disposal to provide you with the best
 const safetyText = "Safety is Kasa's priority. Both for our guests and for travelers, each accommodation is complaint with the safety criteria establishes by our service. By leaving a not for both the host and the tenant, our teams can verify that the standards are respected. We also organize workshops on home security for our guests."
 
 
-
+//Component to render the About page
 export default function About(){
     return(
         <section>

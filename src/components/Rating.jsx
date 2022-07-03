@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+//Component to render the star rating system for each accommodation page
 export default function Rating(props){
     const rating = props.rating
 

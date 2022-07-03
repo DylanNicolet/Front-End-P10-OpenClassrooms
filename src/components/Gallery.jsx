@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
+//Component to render the image gallery on an accommodation's page
 export default function Gallery(props){
     const [backgroundIndex, setBackgroundIndex] = React.useState(0)
     const numberOfPictures = props.pictures.length

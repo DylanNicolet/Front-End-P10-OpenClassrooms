@@ -6,7 +6,7 @@ import Collapse from "../components/Collapse.jsx";
 import { Navigate, useParams } from "react-router-dom";
 import database from "../database.json";
 
-
+//Component to render the accommodation page
 export default function AccommodationPage(){
     let params = useParams()
     let currentId = params.accommodationId

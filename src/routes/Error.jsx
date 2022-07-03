@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//Component to render the 404 error page
 export default function Error(){
     return(
         <section className="error-page__content">
